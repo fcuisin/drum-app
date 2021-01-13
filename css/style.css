@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
 
+:root {
+  --height-footer: 80px;;
+}
+
 html {
   background-color: #111f4d;
 }
@@ -11,6 +15,7 @@ body,html {
 
 footer {
   border-top: 1px solid #090909;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, p, a {
@@ -20,16 +25,34 @@ h1, h2, h3, h4, h5, p, a {
 
 #container {
   background-color: #111f4d;
-}
-
-.row {
-  margin-top:;
-  height: calc(100vh - 80px);
-}
-
-.row {
+  height: calc(100vh - var(--height-footer));
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+.main-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
 }
 
+.row {
+  display: block;
+  justify-content: center;
+  align-content: center;
+}
+
+.keys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key {
+  border: 1px solid #fff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 50px;
+  text-align: center;
+}
