@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+html {
+  background-color: #111f4d;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  border-top: 1px solid #090909;
+}
+
+h1, h2, h3, h4, h5, p, a {
+  font : normal 300 20px/1 'Josefin Sans', sans-serif;
+  color: #fff;
+}
+
+#container {
+  background-color: #111f4d;
+}
+
+.row {
+  margin-top:;
+  height: calc(100vh - 80px);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
