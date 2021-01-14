@@ -14,7 +14,6 @@ body,html {
 }
 
 footer {
-  border-top: 1px solid #090909;
   text-align: center;
 }
 
@@ -55,4 +54,10 @@ h1, h2, h3, h4, h5, p, a {
   border-radius: 5px;
   min-width: 50px;
   text-align: center;
+  transition-duration: 0.3s;
+}
+
+.play {
+  background-color: #FFCB21;
+  border-color: #111f4d;
 }
