@@ -9,18 +9,65 @@
   <meta name="description" content="Let's play music with your keyboard !">
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
   <div id="container">
     <div class="row">
-      <h1>Let's goooooo !</h1>
+      <div>
+        <h1 class="main-title">Let's goooooo !</h1>
+      </div>
+      <div class="keys">
+        <div data-key="65" class="key">
+          <p>A</p>
+        </div>
+        <div data-key="90" class="key">
+          <p>Z</p>
+        </div>
+        <div data-key="69" class="key">
+          <p>E</p>
+        </div>
+        <div data-key="82" class="key">
+          <p>R</p>
+        </div>
+        <div data-key="84" class="key">
+          <p>T</p>
+        </div>
+        <div data-key="89" class="key">
+          <p>Y</p>
+        </div>
+        <div data-key="85" class="key">
+          <p>U</p>
+        </div>
+        <div data-key="73" class="key">
+          <p>I</p>
+        </div>
+        <div data-key="79" class="key">
+          <p>O</p>
+        </div>
+        <div data-key="80" class="key">
+          <p>P</p>
+        </div>
+      </div>
+
+      <audio class="audio" controls>
+        <source data-key="65" src="sounds/do-stretched-octave.wav" type="audio/wav">
+        <source data-key="65" src="sounds/do-octave.wav" type="audio/wav">
+        <source data-key="65" src="sounds/do.wav" type="audio/wav">
+        <source data-key="65" src="sounds/re-stretched.wav" type="audio/wav">
+        <source data-key="65" src="sounds/mi-stretched.wav" type="audio/wav">
+        <source data-key="65" src="sounds/fa-stretched.wav" type="audio/wav">
+        <source data-key="65" src="sounds/la-stretched.wav" type="audio/wav">
+        <source data-key="65" src="sounds/sol-stretched.wav" type="audio/wav">
+        <source data-key="65" src="sounds/si-stretched.wav" type="audio/wav">
+        <source data-key="65" src="sounds/si.wav" type="audio/wav">
+      </audio>
+
     </div>
   </div>
 </body>
 <footer>
-
+  <div><p>Made with <i class="fas fa-heart"></i> by Ferdinand Cuisin - © 2021</p></div>
 </footer>
 <script src="js/main.js"></script>
 </html>
