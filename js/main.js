@@ -4,9 +4,15 @@ function removeTranisition(key) {
   });
 }
 
-window.addEventListener("keydown", function(event) {
+function playMusic(event) {
   const key = document.querySelector(`div[data-key="${event.keyCode}"]`);
+  const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
+  if (!key) return;
+  audio.currentTime = 0;
+  audio.play();
   key.classList.add('play');
   removeTranisition(key);
-});
+}
+
+window.addEventListener("keydown", playMusic);
 
