@@ -17,7 +17,7 @@ footer {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, p, a {
+h1, h2, h3, h4, h5, p, a, button {
   font : normal 300 20px/1 'Josefin Sans', sans-serif;
   color: #fff;
 }
@@ -65,4 +65,21 @@ h1, h2, h3, h4, h5, p, a {
 
 .audio {
   display:none;
+}
+
+.recording-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.start-button, .stop-button {
+  padding: 15px;
+  margin: 10px 20px;
+  border: 1px solid #fff;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  background-color: transparent;
 }
